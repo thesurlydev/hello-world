@@ -8,7 +8,7 @@ plugins {
 }
 
 group = "dev.surly"
-version = "0.1.0"
+version = "0.2.1"
 
 repositories {
     mavenCentral()
@@ -40,7 +40,7 @@ tasks.withType<KotlinCompile> {
 }
 
 mavenPublishing {
-    coordinates("dev.surly", "hello-world", "0.1.0")
+    coordinates("dev.surly", "hello-world", "0.2.1")
     publishToMavenCentral(SonatypeHost.CENTRAL_PORTAL, automaticRelease = true)
     signAllPublications()
     pom {
